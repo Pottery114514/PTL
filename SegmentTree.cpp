@@ -1,3 +1,4 @@
+//参考资料 https://cp-algorithms.com/data_structures/segment_tree.html
 #include<bits/stdc++.h>
 using namespace std;
 using ll=long long;
@@ -53,3 +54,4 @@ void update(int i,int l,int r,int gl,int gr,int add)
     update(i*2,l,m,gl,gr,add);update(i*2+1,m+1,r,gl,gr,add);
     t[i]=t[i*2]+t[i*2+1];
 }
+
